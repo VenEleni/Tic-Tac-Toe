@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body background="./woody2.jpg">
+    <h1>Tic Tac Toe</h1>
+    <div id="container">
+    <div id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+    <div id="endOfGame">
+      <p id="result"></p>
+      <button id="btn">▶ Restart</button>
+    </div>
+    <div id="inputBox">
+      <input id="firstPlayer" class = "inp" type="text" placeholder="Player 1">
+      <input id="secondPlayer" class = "inp" type="text" placeholder="Player 2">
+      <button id="btnStart">Start Game</button>
+    </div>
+  </div>
+    
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

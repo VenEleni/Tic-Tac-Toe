@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+#board {
+  margin: 70px auto;
+  width: 100vw;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-content: center;
+}
+
+#container {
+  position: relative;
+}
+
+.cell {
+  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  color: rgb(190, 2, 40);
+  cursor: pointer;
+  align-items: center;
+  font-size: 100px;
+}
+
+#endOfGame {
+  position: absolute;
+  background-color: rgba(17, 17, 17, 0.336);
+  width: 50%;
+  height: 80%;
+  top: 10%;
+  left: 26%;
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  color: rgba(207, 199, 199, 0.912);
+  line-height: 180px;
+}
+
+#btn {
+  display: block;
+  margin-top: 20%;
+  margin-left: 39%;
+  background-color: blue;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background: #ffffff80;
+  border: 0 solid #3536382e;
+  color: rgba(31, 30, 30, 0.877);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  height: 56px;
+  overflow-wrap: break-word;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer; /*when I hover it's change mouse symbol*/
+  touch-action: manipulation;
+}
+
+#result {
+  display: "none";
+  height: 60px;
+}
+
+#restart {
+  position: relative;
+  top: 50%;
+  left: 45%;
+  background-color: rgb(251, 22, 6);
+  color: rgb(245, 245, 245);
+  font-family: fantasy;
+  font-size: 150%;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+  border-left: none;
+}
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+  border-bottom: none;
+}
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+  border-right: none;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.863);
+  margin: auto;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#inputBox {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  top: 16%;
+  left: 30%;
+}
+
+.inp {
+  text-align: center;
+  cursor: text;
+  display: inline-block;
+  padding: 9px 10px;
+  margin: 18px;
+  width: 50%;
+  margin-left: 130px;
+  background-color: rgb(228, 228, 228);
+  margin-bottom: 0px;
+}
+
+#btnStart {
+  margin: 20px 178px;
+  width: 35%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background: #ffffff80;
+  border: 0 solid #3536382e;
+  color: rgba(31, 30, 30, 0.877);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  cursor: pointer;
+}
